@@ -16,6 +16,8 @@
 		9E38B1A323566E040041F2C7 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E38B1A223566E040041F2C7 /* main.storyboard */; };
 		9E38B1A823566ED60041F2C7 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E38B1A723566ED60041F2C7 /* ChatTableViewController.swift */; };
 		9E38B1AA23566F1D0041F2C7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E38B1A923566F1D0041F2C7 /* MessageViewController.swift */; };
+		9E38B1AF23566FF80041F2C7 /* MessageRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E38B1AE23566FF80041F2C7 /* MessageRepresentation.swift */; };
+		9E38B1B1235670080041F2C7 /* ChatRoomRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E38B1B0235670080041F2C7 /* ChatRoomRepresentation.swift */; };
 		9EF87B0723564E1400EE1D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF87B0623564E1400EE1D36 /* AppDelegate.swift */; };
 		9EF87B0923564E1400EE1D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF87B0823564E1400EE1D36 /* SceneDelegate.swift */; };
 		9EF87B0B23564E1400EE1D36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF87B0A23564E1400EE1D36 /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 		9E38B1A223566E040041F2C7 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9E38B1A723566ED60041F2C7 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		9E38B1A923566F1D0041F2C7 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		9E38B1AE23566FF80041F2C7 /* MessageRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepresentation.swift; sourceTree = "<group>"; };
+		9E38B1B0235670080041F2C7 /* ChatRoomRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomRepresentation.swift; sourceTree = "<group>"; };
 		9EF87B0323564E1400EE1D36 /* FireBase Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FireBase Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF87B0623564E1400EE1D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF87B0823564E1400EE1D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,10 +105,20 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		9E38B1AD23566FD30041F2C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E38B1AE23566FF80041F2C7 /* MessageRepresentation.swift */,
+				9E38B1B0235670080041F2C7 /* ChatRoomRepresentation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9EF87AFA23564E1400EE1D36 = {
 			isa = PBXGroup;
 			children = (
 				9E38B1A223566E040041F2C7 /* main.storyboard */,
+				9E38B1AD23566FD30041F2C7 /* Models */,
 				9E38B1A423566E900041F2C7 /* View Controllers */,
 				9EF87B0523564E1400EE1D36 /* FireBase Chat */,
 				9EF87B0423564E1400EE1D36 /* Products */,
@@ -266,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E38B1AF23566FF80041F2C7 /* MessageRepresentation.swift in Sources */,
 				9EF87B0723564E1400EE1D36 /* AppDelegate.swift in Sources */,
 				9EF87B0923564E1400EE1D36 /* SceneDelegate.swift in Sources */,
 				9EF87B0B23564E1400EE1D36 /* ContentView.swift in Sources */,
 				9E38B1A823566ED60041F2C7 /* ChatTableViewController.swift in Sources */,
+				9E38B1B1235670080041F2C7 /* ChatRoomRepresentation.swift in Sources */,
 				9E38B1AA23566F1D0041F2C7 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
